@@ -5,13 +5,31 @@
 	Random randnum = new Random();
 	randnum.setSeed(23323456)
  * Date: 2016/11/28
- * Author: 1050210XX 周永振老師
+ * Author: 105021041 楊建宸
  */
-
+import java.util.Random;
+import java.util.Scanner;
 public class ex01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		Random ran = new Random();
+		
+		int n = scn.nextInt();
+		int m [] = new int [6];
+		
+		ran.setSeed(n);
+		for(int x = 0 ; x < 6 ; x ++){
+		m [x] = ran.nextInt(42) + 1;
+			for(int y = 0 ; y < 1 ; y++){
+			if(m [x] == m [y]){
+			m [x] = ran.nextInt(42) + 1;}}}
+		
+		for(int x = 0 ; x < 6 ; x ++){
+			System.out.print(m[x] + " ");
+			
+		}
 
 	}
 
